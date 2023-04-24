@@ -1,0 +1,200 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	color: #444;
+	border-top: 10px solid #1098ad;
+}
+
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
+
+h1 {
+	font-size: 26px;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 38px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+h2::after {
+	content: 'TOP';
+	background-color: #ffe70e;
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 10px;
+	position: absolute;
+	top: -15px;
+	right: -25px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+p {
+	font-size: 22px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+/* ANCHOR */
+a:link {
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #1098ad;
+}
+
+a:hover {
+	color: orangered;
+}
+
+a:active {
+	font-style: italic;
+}
+
+/* CONTAINER */
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* FLEXBOX */
+.row {
+	display: flex;
+	gap: 75px;
+	margin-bottom: 60px;
+}
+
+article {
+	flex: 1;
+}
+
+/* HEADER */
+.main-header {
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+	margin-bottom: 60px;
+	/* FLEXBOX */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav {
+	font-size: 18px;
+}
+
+nav a:link {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+nav a:link:last-child {
+	margin-right: 0;
+}
+
+/* POST */
+.post-info {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 15px;
+}
+
+.post-date {
+	font-size: 18px;
+	font-style: italic;
+	margin: 0;
+}
+
+.post-img {
+	width: 100%;
+	height: auto;
+}
+
+.author-img {
+	border-radius: 50%;
+}
+
+/* LIST */
+ol {
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+li {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+li:first-child {
+	font-weight: bold;
+}
+
+li:last-child {
+	margin-bottom: 0;
+}
+
+/* RELATED POSTS */
+.related-post {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 30px;
+}
+
+.related-link:link {
+	font-size: 17px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.related-author {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0;
+}
+
+aside {
+	background-color: #f7f7f7;
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
+	padding: 45px 40px;
+	/* FLEXBOX */
+	flex: 0 0 300px;
+	align-self: flex-start;
+}
+
+/* FOOTER */
+footer {
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+	text-align: center;
+}
