@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ANCHOR */
+a:link {
+	color: #343a40;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #343a40;
+}
+
+a:hover {
+	color: #087f5b;
+}
+
+a:active {
+	font-style: italic;
+}
